@@ -1,8 +1,10 @@
+.square-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px; }
+
 .square {
-  border: 1px solid black;
-  height: 200px;
-  width: 200px;
-  background-color: green;
-  padding: 20px; }
-  .square-container {
-    background-color: blue; }
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center; }
