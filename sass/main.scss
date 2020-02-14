@@ -8,4 +8,21 @@
     padding: 20px;
     font-size: 30px;
     text-align: center;
+
+    &:hover {
+        animation: hover;
+        transition: all .3s;
+    }
+  }
+//THIS DOES NOT WORK - MAKE THE KEY FRAMES HAPPEN ON HOVER
+$starting-orange: rgb(235, 183, 52) ;
+$ending-orange: rgb(237, 179, 33);
+  @keyframes hover {
+      0% {
+          background-color: $starting-orange;
+      }
+
+      100% {
+            background-color: $ending-orange;
+      }
   }

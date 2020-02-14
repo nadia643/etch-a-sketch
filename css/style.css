@@ -8,3 +8,12 @@
   padding: 20px;
   font-size: 30px;
   text-align: center; }
+  .square:hover {
+    animation: hover;
+    transition: all .3s; }
+
+@keyframes hover {
+  0% {
+    background-color: #ebb734; }
+  100% {
+    background-color: #edb321; } }
