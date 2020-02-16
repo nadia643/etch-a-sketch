@@ -1,3 +1,17 @@
+$starting-orange: rgb(235, 183, 52) ;
+$ending-orange: rgb(237, 179, 33);
+
+
+@keyframes changeColorOnHover {
+    0% {
+        background-color: $starting-orange;
+    }
+
+    100% {
+          background-color: $ending-orange;
+    }
+}
+
 .square-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -9,19 +23,13 @@
     font-size: 30px;
     text-align: center;
 
-    &:hover {
-        animation: hover;
-        transition: all .3s;
-    }
+    // &:hover {
+    //     animation: changeColorOnHover;
+    //     transition: all .3s;
+    // }
   }
-$starting-orange: rgb(235, 183, 52) ;
-$ending-orange: rgb(237, 179, 33);
-  @keyframes hover {
-      0% {
-          background-color: $starting-orange;
-      }
 
-      100% {
-            background-color: $ending-orange;
-      }
+  .square-container:hover {
+    animation: changeColorOnHover 1s;
+    transition: all .3s;
   }
