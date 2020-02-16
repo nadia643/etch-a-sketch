@@ -1,5 +1,5 @@
-$starting-orange: rgb(235, 183, 52) ;
-$ending-orange: rgb(237, 179, 33);
+$starting-orange: rgb(235, 188, 70) ;
+$ending-orange: rgb(241, 69, 1);
 
 
 @keyframes changeColorOnHover {
@@ -23,13 +23,9 @@ $ending-orange: rgb(237, 179, 33);
     font-size: 30px;
     text-align: center;
 
-    // &:hover {
-    //     animation: changeColorOnHover;
-    //     transition: all .3s;
-    // }
+    &:hover {
+        animation: changeColorOnHover 1s;
+    }
   }
 
-  .square-container:hover {
-    animation: changeColorOnHover 1s;
-    transition: all .3s;
-  }
+

@@ -1,8 +1,8 @@
 @keyframes changeColorOnHover {
   0% {
-    background-color: #ebb734; }
+    background-color: #ebbc46; }
   100% {
-    background-color: #edb321; } }
+    background-color: #f14501; } }
 
 .square-container {
   display: grid;
@@ -14,7 +14,5 @@
   padding: 20px;
   font-size: 30px;
   text-align: center; }
-
-.square-container:hover {
-  animation: changeColorOnHover 1s;
-  transition: all .3s; }
+  .square:hover {
+    animation: changeColorOnHover 1s; }
