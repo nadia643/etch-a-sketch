@@ -2,15 +2,15 @@ $starting-orange: rgb(235, 188, 70) ;
 $ending-orange: rgb(241, 69, 1);
 
 
-@keyframes changeColorOnHover {
-    0% {
-        background-color: $starting-orange;
-    }
+// @keyframes changeColorOnHover {
+//     0% {
+//         background-color: $starting-orange;
+//     }
 
-    100% {
-          background-color: $ending-orange;
-    }
-}
+//     100% {
+//           background-color: $ending-orange;
+//     }
+// }
 
 .square-container {
     display: grid;
@@ -23,9 +23,17 @@ $ending-orange: rgb(241, 69, 1);
     font-size: 30px;
     text-align: center;
 
-    &:hover {
-        animation: changeColorOnHover 1s;
-    }
+    // &:hover {
+    //     animation-play-state: paused;
+
+    //     animation: changeColorOnHover;
+    //     animation-duration: 1.5s;
+    //     animation-delay: .1s;
+    //     animation-fill-mode: forwards;
+    //     animation-iteration-count: infinite;
+    //     animation-direction: forwards;
+
+    // }
   }
 
 

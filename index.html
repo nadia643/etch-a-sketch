@@ -9,28 +9,40 @@
     href = "./css/style.css" />
     <title>Document</title>
 </head>
+
 <body>
+    <script> 
+    const allSquares = document.querySelectorAll("div.square");
+    function changeColour(allSquares) {
+        allSquares.style.backgroundColor = "red";
+    }
+</script>
+
+
+
     <h1>
         Etch a sketch
     </h1>
     <div class="square-container">
-            <div class="square">1</div>
-            <div class="square">2</div>
-            <div class="square">3</div>  
-            <div class="square">4</div>
-            <div class="square">5</div>
-            <div class="square">6</div>  
-            <div class="square">7</div>
-            <div class="square">8</div>
-            <div class="square">9</div> 
-            <div class="square">10</div>  
-            <div class="square">11</div>  
-            <div class="square">12</div>  
-            <div class="square">13</div>  
-            <div class="square">14</div>  
-            <div class="square">15</div>  
-            <div class="square">16</div>  
+            <div class="square" onmouseover="changeColour(this)"></div>
+            <div class="square" onmouseover="changeColour(this)"></div>
+            <div class="square" onmouseover="changeColour(this)"></div>  
+            <div class="square" onmouseover="changeColour(this)"></div>
+            <div class="square" onmouseover="changeColour(this)"></div>
+            <div class="square" onmouseover="changeColour(this)"></div>  
+            <div class="square" onmouseover="changeColour(this)"></div>
+            <div class="square" onmouseover="changeColour(this)"></div>
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div>  
+            <div class="square" onmouseover="changeColour(this)"></div>  
+            <div class="square" onmouseover="changeColour(this)"></div>  
+            <div class="square" onmouseover="changeColour(this)"></div>  
+            <div class="square" onmouseover="changeColour(this)"></div>  
+            <div class="square" onmouseover="changeColour(this)"></div>  
+            <div class="square" onmouseover="changeColour(this)"></div>  
           </div>
     
 </body>
+
+
 </html>
