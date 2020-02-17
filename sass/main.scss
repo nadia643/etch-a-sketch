@@ -1,20 +1,30 @@
-$starting-orange: rgb(235, 188, 70) ;
-$ending-orange: rgb(241, 69, 1);
+$main-peach:  RGB(238, 120, 120);
+$background-grey: #c7c6c5;
 
+body {
+    background: $background-grey;
+    
+}
 
-// @keyframes changeColorOnHover {
-//     0% {
-//         background-color: $starting-orange;
-//     }
+.button {
+    background-color: $main-peach;
+    height: 40px;
+    width: auto;
+    text-align: center;
 
-//     100% {
-//           background-color: $ending-orange;
-//     }
-// }
+    &:hover {
+        background-color: lighten(#ee7878, 8%);
+        cursor: grab;
+    }
+}
+
+.buttons {
+    text-align: center;
+}
 
 .square-container {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto;
     padding: 10px;
   }
   .square {
@@ -23,18 +33,8 @@ $ending-orange: rgb(241, 69, 1);
     padding: 20px;
     font-size: 30px;
     text-align: center;
-
-    // &:hover {
-    //     animation-play-state: paused;
-
-    //     animation: changeColorOnHover;
-    //     animation-duration: 1.5s;
-    //     animation-delay: .1s;
-    //     animation-fill-mode: forwards;
-    //     animation-iteration-count: infinite;
-    //     animation-direction: forwards;
-
-    // }
   }
+
+
 
 
