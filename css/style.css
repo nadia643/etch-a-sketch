@@ -4,7 +4,8 @@
   padding: 10px; }
 
 .square {
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  border: 0.5px solid rgba(0, 0, 0, 0.8);
+  margin: 0.5px;
   padding: 20px;
   font-size: 30px;
   text-align: center; }
