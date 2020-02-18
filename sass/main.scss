@@ -24,15 +24,12 @@ body {
 
 .square-container {
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    padding: 10px;
+    grid-template-columns: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+    grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
   }
+
   .square {
     border: 0.5px solid rgba(0, 0, 0, 0.8);
-    margin: 0.5px;
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
   }
 
 
