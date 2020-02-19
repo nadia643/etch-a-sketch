@@ -18,6 +18,18 @@ body {
     }
 }
 
+.button-rainbow {
+    background-color: $main-peach;
+    height: 40px;
+    width: auto;
+    text-align: center;
+
+    &:hover {
+        background-color: lighten(#ee7878, 8%);
+        cursor: grab;
+    }
+}
+
 .buttons {
     text-align: center;
 }

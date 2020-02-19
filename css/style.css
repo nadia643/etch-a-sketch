@@ -10,6 +10,15 @@ body {
     background-color: #f39c9c;
     cursor: grab; }
 
+.button-rainbow {
+  background-color: RGB(238, 120, 120);
+  height: 40px;
+  width: auto;
+  text-align: center; }
+  .button-rainbow:hover {
+    background-color: #f39c9c;
+    cursor: grab; }
+
 .buttons {
   text-align: center; }
 

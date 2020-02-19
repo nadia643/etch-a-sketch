@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/nadia643/etch-a-sketch/issues"
   },
-  "homepage": "https://github.com/nadia643/etch-a-sketch#readme"
+  "homepage": "https://github.com/nadia643/etch-a-sketch#readme",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
 }
