@@ -7,11 +7,23 @@
     <link rel = "stylesheet"
     type = "text/css"
     href = "./css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>
     <title>Document</title>
 </head>
 
 <body>
     <script> 
+
+$(document).ready(function() {
+        $('#square').hover(function() {
+            $(this).css("background-color", "orange");
+        },
+        function() {
+
+        })
+        
+    })
 
     const allSquares = document.querySelectorAll("div.square");
     const colour = "pink";
@@ -24,13 +36,14 @@
         return '#000000'.slice(0, -color.length) + color;
     }
 
-    const buttonRainbow = document.getElementsByClassName("button-rainbow");
-    buttonRainbow.addEventListener("click", changeToRainbow);
+    const buttonRainbow = document.getElementById("button-rainbow");
+    buttonRainbow.addEventListener("click", myFunction)
 
 
     function changeToRainbow(allSquares) {
         allSquares.style.backgroundColor = getRandomColour();
     }
+
 
 
 
@@ -48,32 +61,115 @@
     <button 
     type="button" 
     class="button-rainbow"
+    id="button-rainbow"
     onClick="changeToRainbow()">Rainbow</button>
 
     </div>
 
 
     <div class="square-container">
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-
-       
+            <div class="square" onmouseover="changeColour(this)"></div>
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div>
+            <div class="square" onmouseover="changeColour(this)"></div>
+            <div class="square" onmouseover="changeColour(this)"></div>
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div>
+            <div class="square" onmouseover="changeColour(this)"></div>
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div>
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div>
+            <div class="square" onmouseover="changeColour(this)"></div>
+            <div class="square" onmouseover="changeColour(this)"></div>
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div>
+            <div class="square" onmouseover="changeColour(this)"></div>
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div>
+            <div class="square" onmouseover="changeColour(this)"></div>
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div>
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div>
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div>
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div>
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            <div class="square" onmouseover="changeColour(this)"></div> 
+            
+          
                
           </div>
     

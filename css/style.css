@@ -1,6 +1,9 @@
 body {
   background: #c7c6c5; }
 
+h1 {
+  text-align: center; }
+
 .button {
   background-color: RGB(238, 120, 120);
   height: 40px;
